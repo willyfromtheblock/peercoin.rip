@@ -59,7 +59,7 @@ function App() {
         </div>
       </div>
       <div className="row ppc-background justify-content-center p-2">
-        The End
+        The End - Icons: icons8.de
       </div>
     </div>
   );
@@ -68,6 +68,5 @@ function App() {
 export default App;
 
 //TODO: Scroll down hint icon
-//TODO: Logo credit
 //TODO: donations
 //TODO: contribute
