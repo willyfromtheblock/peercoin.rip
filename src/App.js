@@ -13,6 +13,7 @@ function App() {
                 <img
                   className="img-fluid ppc-logo"
                   src="assets/img/peercoin.svg"
+                  alt="peercoin logo"
                 />
               </div>
             </div>
@@ -21,6 +22,7 @@ function App() {
                 <img
                   className="ppc-tombstone"
                   src="assets/img/tombstone.png"
+                  alt="tombstone"
                 ></img>
               </span>
             </div>
