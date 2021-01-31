@@ -1,8 +1,8 @@
 ## How to contribute orbituaries
 
 1. Add orbituary to `src/data/death_certificates.json`
-   Please limit text to 300 characters
-   Don't worry about ordering the file by date, the items are sorted internally
+   - Please limit text to 300 characters and format the date as shown
+   - Don't worry about ordering the file by date, items are sorted internally
 2. Create pull request
 3. ???
 4. Profit
