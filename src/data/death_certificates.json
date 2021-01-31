@@ -1,6 +1,6 @@
 [
   {
-    "date": "January 29, 2021",
+    "date": "Jan 29, 2021",
     "author": "wolfcrafts",
     "sourceURL": "https://talk.peercoin.net/t/wall-observer-the-ppc-price-speculation-thread/106/350",
     "text": "finally ppc dead…",
@@ -12,5 +12,26 @@
     "sourceURL": "https://www.reddit.com/r/peercoin/comments/2kr91h/is_peercoin_dead/clso4t6?utm_source=share&utm_medium=web2x&context=3",
     "text": "Yeah its pretty much dead. No coin has ever recovered from a price drop like this.",
     "price": 0.76
+  },
+  {
+    "date": "Oct 22, 2015",
+    "author": "MeherRoy",
+    "sourceURL": "https://twitter.com/MeherRoy/status/657274734556659712",
+    "text": "Peercoin is somewhat dead. Part of the trouble is a lone developer that wants to remain anonymous.",
+    "price": 0.36
+  },
+  {
+    "date": "Aug 14, 2018",
+    "author": "MarcDeMesel",
+    "sourceURL": "https://twitter.com/MarcDeMesel/status/1029294467524841472",
+    "text": "[...] has collapsed much harder than most already, dropping from 50th place to 130th with market cap of $30M, now valued lower than dead coins like Peercoin, Namecoin and $NXT!",
+    "price": 1.11
+  },
+  {
+    "date": "Sep 18, 2018",
+    "author": "AvdiuSazan",
+    "sourceURL": "https://twitter.com/AvdiuSazan/status/1042132271690596352",
+    "text": "[...] Only Nxt & Ardor are pure PoS. Peercoin was (dead and buried) hybrid. [...]",
+    "price": 1.01
   }
 ]
