@@ -5,7 +5,10 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const buildTimeLineElement = (author, sourceURL, text, price, date) => {
+const buildTimeLineElement = (
+  { author, sourceURL, text, price, date },
+  index
+) => {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -18,24 +21,25 @@ const buildTimeLineElement = (author, sourceURL, text, price, date) => {
         display: "flex",
         padding: "10px",
       }}
+      key={index}
     >
       <div className="row">
         <div className="col">
           <img src="../assets/img/dollarsign.png" alt="dollar price" />
-          0.44
+          {price}
         </div>
         <div className="col">
           <img src="../assets/img/calendar.png" alt="calendar" />
-          <span className="ppc-timeline_title">30. Jan 2020</span>
+          <span className="ml-0 ml-sm-2">{date}</span>
         </div>
         <div className="col">
           <img src="../assets/img/writer.png" alt="author" />
-          <span className="ppc-timeline_title">daWilye</span>
+          <span className="ml-0 ml-sm-2">{author}</span>
         </div>
       </div>
       <div className="row mt-3">
         <div className="col">
-          <span className="ppc-timeline_text">&laquo; ppc is ded &raquo;</span>
+          <span className="ppc-timeline_text">&laquo; {text} &raquo;</span>
         </div>
       </div>
       <div className="row mt-2">
@@ -54,15 +58,17 @@ const buildTimeLineElement = (author, sourceURL, text, price, date) => {
   );
 };
 
-export default function TimeLine() {
+export default function TimeLine({ orbituaries }) {
+  function custom_sort(a, b) {
+    return new Date(a.date).getTime() - new Date(b.date).getTime();
+  }
+  orbituaries.sort(custom_sort);
+
   return (
     <VerticalTimeline>
-      {buildTimeLineElement("test", "test", "test", "test", "test")}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}{" "}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}{" "}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}{" "}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}
+      {orbituaries.map((entry, index) => {
+        return buildTimeLineElement(entry, index);
+      })}
       <VerticalTimelineElement
         iconStyle={{
           background: "#3cb054",

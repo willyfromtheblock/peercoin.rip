@@ -1,7 +1,9 @@
 import "./scss/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CountUp from "react-countup";
 import TimeLine from "./components/TimeLine";
 import Footer from "./components/Footer";
+import orbituaries from "./data/death_certificates.json";
 
 function App() {
   return (
@@ -45,7 +47,9 @@ function App() {
             </div>
             <div className="row pt-3 pb-3 justify-content-center">
               <div className="col-auto">
-                <h2 className="m0">5 times</h2>
+                <h2 className="m0">
+                  <CountUp end={orbituaries.length} /> times
+                </h2>
               </div>
             </div>
             <div className="row mt-5 justify-content-center">
@@ -73,7 +77,7 @@ function App() {
       </div>
       <div className="row">
         <div className="col d-flex justify-content-center" id="timeline">
-          <TimeLine />
+          <TimeLine orbituaries={orbituaries} />
         </div>
       </div>
       <Footer />
@@ -82,7 +86,3 @@ function App() {
 }
 
 export default App;
-
-//TODO: Scroll down hint icon
-//TODO: donations
-//TODO: contribute

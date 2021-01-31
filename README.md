@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+## How to contribute orbituaries
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Add orbituary to `src/data/death_certificates.json`
+   Please limit text to 300 characters
+   Don't worry about ordering the file by date, the items are sorted internally
+2. Create pull request
+3. ???
+4. Profit
 
 ## Available Scripts
 
