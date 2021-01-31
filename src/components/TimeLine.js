@@ -5,43 +5,79 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const buildTimeLineElement = (author, source, text, price, date) => {
+const buildTimeLineElement = (
+  { author, sourceURL, text, price, date },
+  index
+) => {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
       contentStyle={{ background: "black", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid  black" }}
-      date={date}
-      iconStyle={{ background: "black", color: "#fff" }}
+      icon={<img src="../assets/img/skull.png" alt="skull" />}
+      iconStyle={{
+        background: "black",
+        color: "#fff",
+        display: "flex",
+        padding: "10px",
+      }}
+      key={index}
     >
       <div className="row">
-        <div className="col">$0.44</div>
-        <div className="col">30. Jan 2020</div>
         <div className="col">
-          <strong>daWilley</strong>
+          <img src="../assets/img/dollarsign.png" alt="dollar price" />
+          {price}
+        </div>
+        <div className="col">
+          <img src="../assets/img/calendar.png" alt="calendar" />
+          <span className="ml-0 ml-sm-2">{date}</span>
+        </div>
+        <div className="col">
+          <img src="../assets/img/writer.png" alt="author" />
+          <span className="ml-0 ml-sm-2">{author}</span>
         </div>
       </div>
       <div className="row mt-3">
         <div className="col">
-          <i>"peercoin is ded"</i>
+          <span className="ppc-timeline_text">&laquo; {text} &raquo;</span>
         </div>
       </div>
       <div className="row mt-2">
-        <div className="col">Source </div>
+        <div className="col">
+          <a
+            href={sourceURL}
+            target="_blank"
+            rel="noreferrer"
+            className="ppc-timeline_source"
+          >
+            Source
+          </a>
+        </div>
       </div>
     </VerticalTimelineElement>
   );
 };
 
-export default function TimeLine() {
+export default function TimeLine({ orbituaries }) {
+  function custom_sort(a, b) {
+    return new Date(a.date).getTime() - new Date(b.date).getTime();
+  }
+  orbituaries.sort(custom_sort);
+
   return (
     <VerticalTimeline>
-      {buildTimeLineElement("test", "test", "test", "test", "test")}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}{" "}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}{" "}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}{" "}
-      {buildTimeLineElement("test", "test", "test", "test", "test")}
+      {orbituaries.map((entry, index) => {
+        return buildTimeLineElement(entry, index);
+      })}
+      <VerticalTimelineElement
+        iconStyle={{
+          background: "#3cb054",
+          color: "#fff",
+          display: "flex",
+          padding: "13px",
+        }}
+        icon={<img src="../assets/img/peercoin-leaf.svg" alt="peercoin leaf" />}
+      />
     </VerticalTimeline>
   );
 }
