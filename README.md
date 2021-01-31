@@ -2,7 +2,7 @@
 
 1. Add orbituary to `src/data/death_certificates.json`
    - Please limit text to 300 characters and format the date as shown
-   - Don't worry about ordering the file by date, items are sorted internally
+   - Don't worry about sorting the file by date, items are sorted internally - you can append to the end
    - Historic prices can be found here: https://coinmarketcap.com/currencies/peercoin/historical-data/
 2. Create pull request
 3. ???
