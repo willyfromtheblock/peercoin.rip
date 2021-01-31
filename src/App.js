@@ -1,6 +1,7 @@
 import "./scss/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TimeLine from "./components/TimeLine";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,18 +24,18 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="row justify-content-center mt-3 mb-3 mt-md-5 mb-md-5 pb-3">
+            <div className="row justify-content-center mt-3 mt-md-5 mb-3 mb-md-5 pb-3">
               <span>
                 <img
                   className="ppc-tombstone"
                   src="assets/img/tombstone.png"
                   alt="tombstone"
-                ></img>
+                />
               </span>
             </div>
             <div className="row justify-content-center">
               <div className="col-auto">
-                <h4>
+                <h4 className="m0">
                   <span className="mr-2">
                     <img src="assets/img/reaper.png" alt="reaper icon" />
                   </span>
@@ -49,7 +50,7 @@ function App() {
             </div>
             <div className="row mt-5 justify-content-center">
               <div className="col-auto">
-                <h4>
+                <h4 className="m0">
                   <span className="mr-2">
                     <img src="assets/img/frankenstein.png" alt="zombie icon" />
                   </span>
@@ -57,7 +58,7 @@ function App() {
                 </h4>
               </div>
             </div>
-            <div className="row pt- justify-content-center">
+            <div className="row pt-3 justify-content-center">
               <div className="col-auto">
                 <h2 className="m0">7th of July 2012</h2>
               </div>
@@ -75,17 +76,7 @@ function App() {
           <TimeLine />
         </div>
       </div>
-      <div className="row ppc-background p-2">
-        <div className="col-6 justify-content-center d-flex">The End </div>
-        <div className="col-6 justify-content-center d-flex">
-          <span>
-            Icons:{" "}
-            <a href="https://ppc.lol/XGWWE" target="_blank" rel="noreferrer">
-              icons8.de
-            </a>
-          </span>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }

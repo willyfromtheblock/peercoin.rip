@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.m0 {
-  margin: 0 !important;
-}
-
 body {
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
   font-family: "Roboto", sans-serif !important;
@@ -29,6 +25,10 @@ a:active {
   outline: none;
   color: $text-color !important;
   text-decoration: none !important;
+}
+
+.m0 {
+  margin: 0 !important;
 }
 
 .ppc {
@@ -58,6 +58,19 @@ a:active {
     animation: shake 0.8s;
     &:hover {
       animation: shake 0.8s infinite;
+    }
+  }
+
+  &-timeline {
+    &_title {
+      margin-left: 0.5rem;
+    }
+    &_text {
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+    &_source {
+      font-size: 0.8rem;
     }
   }
 
