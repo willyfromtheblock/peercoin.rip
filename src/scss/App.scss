@@ -31,6 +31,11 @@ a:active {
   margin: 0 !important;
 }
 
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden,
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+    display: block !important;
+}
+
 .ppc {
   &-background {
     background-color: $background-color;
