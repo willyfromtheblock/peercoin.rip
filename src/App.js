@@ -7,7 +7,7 @@ import orbituaries from "./data/death_certificates.json";
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid overflow-hidden">
       <div className="row ppc-hero">
         <div className="col-12 d-flex flex-column ppc-background justify-content-center align-items-center">
           <div className="container-fluid">
