@@ -4,6 +4,7 @@
    - Please limit text to 300 characters and format the date as shown
    - Don't worry about sorting the file by date, items are sorted internally 
    - Historic prices can be found here: https://coinmarketcap.com/currencies/peercoin/historical-data/
+   - Author should be of _some_ significance (subject to interpretation) 
 2. Create pull request
 3. ???
 4. Profit
