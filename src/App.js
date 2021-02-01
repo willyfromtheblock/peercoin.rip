@@ -39,7 +39,7 @@ function App() {
               <div className="col-auto">
                 <h4 className="m0">
                   <span className="mr-2">
-                    <img src="assets/img/reaper.png" alt="reaper icon" />
+                    <img src="assets/img/reaper.png" width="40px" alt="reaper icon" />
                   </span>
                   <strong>Declared dead</strong>
                 </h4>
@@ -56,7 +56,7 @@ function App() {
               <div className="col-auto">
                 <h4 className="m0">
                   <span className="mr-2">
-                    <img src="assets/img/frankenstein.png" alt="zombie icon" />
+                    <img src="assets/img/frankenstein.png" width="40px" alt="zombie icon" />
                   </span>
                   <strong>Undead since</strong>
                 </h4>
