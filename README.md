@@ -2,13 +2,13 @@
 
 1. Add orbituary to `src/data/death_certificates.json`
    - Please limit text to 300 characters and format the date as shown
-   - Don't worry about sorting the file by date, items are sorted internally 
+   - Don't worry about sorting the file by date, items are sorted internally
    - Historic prices can be found here: https://coinmarketcap.com/currencies/peercoin/historical-data/
-   - Author should be of _some_ significance (subject to interpretation) 
+   - Author should be of _some_ significance (subject to interpretation)
 2. Create pull request
 3. ???
 4. Profit
-5. Invite the maintainer for a moscow mule - `PPXMXETHJE3E8k6s8vmpDC18b7y5eKAudS`
+5. Invite the maintainer for a moscow mule - `PM7jjBUPjzpkZy1UZtD7mvmHoXJ2BGvbx9`
 
 ## Available Scripts
 

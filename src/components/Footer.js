@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="row ppc-background p-2 justify-content-center">
       <div className="col-auto d-flex align-items-center">
-        Donations: PPXMXETHJE3E8k6s8vmpDC18b7y5eKAudS
+        Donations: PM7jjBUPjzpkZy1UZtD7mvmHoXJ2BGvbx9
       </div>
       <div className="col-auto d-flex align-items-center">
         <span>
