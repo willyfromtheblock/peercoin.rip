@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./google-fonts.css";
+import "./scss/google-fonts.css";
 
 ReactDOM.render(
   <React.StrictMode>
